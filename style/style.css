@@ -139,6 +139,49 @@ margin-right: 30px;
   font-size: 1rem ;
 }
 
+/* feature will love and enjoy section */
+
+.features{
+  gap: 140px;
+}
+#feature-section-title{
+  border-left: 5px solid #FF900E;
+  padding-left: 21px ;
+}
+
+.feature-card{
+  box-shadow: 0 4px 30px 0  rgba(0, 0, 0, 0.06) ;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+
+}
+
+.feature-card .feature-title{
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#experience-badge{
+  padding: 42px;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+#experience-year{
+  font-weight: bold;
+  font-size: 4rem;
+
+}
+#experience{
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+
+
+
 /* facts related styles */
 .facts-card{
   border: 2px solid #FF900E;
@@ -173,6 +216,44 @@ margin-right: 30px;
   max-width: 540px;
 }
 
+
+/* sponsors related styles */
+
+.sponspors-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.sponspors-logos{
+  display: grid;
+  /* gap: 155px ; */
+  grid-template-columns: repeat(5, 1fr);
+  
+}
+
+.sponspors-logos img{
+  filter: grayscale(100%);
+  
+}
+
+/* footer section styles */
+
+.footer-sectiion{
+  border: none;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #FFF4E7;
+  border-radius: 8px;
+  margin-top:130px ;
+ 
+}
+.footer-title{
+  font-weight: 400;
+  font-size: 1.25rem ;
+  padding: 38px 410px;
+}
+
 /* responsive meadia quary for small devices */
 
 @media screen and (max-width:576px) {
@@ -185,7 +266,7 @@ margin-right: 30px;
     margin-bottom: 10px;
   }
 
-  .team-img-container ,.facts-container{
+  .team-img-container , .sponspors-logos, .facts-container{
     grid-template-columns: repeat(1, 1fr);
   }
   
@@ -193,11 +274,16 @@ margin-right: 30px;
     margin-left: 20px;
   }
 
-  .facts-container{
+  .facts-container ,.sponspors-logos{
     justify-items: center;
     gap: 24px;
    
   }
+
+  /* .sponspors-logos{
+    gap: 50px;
+   justify-items: center;
+  } */
   
 }
 
@@ -210,7 +296,7 @@ margin-right: 30px;
   .our-features{
     margin: 50px auto;
   }
-  .facts-container{
+  .facts-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     
@@ -219,4 +305,15 @@ margin-right: 30px;
   .some-facts{
     text-align: center;
   }
+
+
+
+  .sponspors-logos{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-items: center;
+    
+  }
+ 
+
 }
